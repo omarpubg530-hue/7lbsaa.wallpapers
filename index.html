@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حلبسة للخلفيات - تحميل أروع الخلفيات للموبايل والكمبيوتر</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!--  عنصر الخلفية المتحركة -->
+    <div id="particles-js"></div>
+
+    <header class="site-header">
+        <div class="container">
+            <!-- تم تحويل الشعار إلى رابط -->
+            <a href="#" id="logo-link" class="logo">حلبسة للخلفيات</a>
+            <nav class="main-nav">
+                <a href="#" class="nav-link active" data-target="desktop-section">كمبيوتر</a>
+                <a href="#" class="nav-link" data-target="mobile-section">هاتف</a>
+            </nav>
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="search" id="search-input" placeholder="ابحث عن خلفيات...">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- قسم خلفيات الكمبيوتر -->
+            <section id="desktop-section" class="wallpaper-section active-section">
+                <h2 class="section-title">خلفيات كمبيوتر (Desktop)</h2>
+                <div class="wallpaper-grid" id="desktop-grid">
+                </div>
+            </section>
+
+            <!-- قسم خلفيات الموبايل -->
+            <section id="mobile-section" class="wallpaper-section">
+                <h2 class="section-title">خلفيات موبايل (Mobile)</h2>
+                <div class="wallpaper-grid" id="mobile-grid"></div>
+            </section>
+
+             <!-- قسم نتائج البحث -->
+             <section id="search-results-section" class="wallpaper-section">
+                <h2 class="section-title" id="search-title"></h2>
+                <div class="wallpaper-grid" id="search-grid"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer-bottom">
+        <p>&copy; 2025 حلبسة للخلفيات. كل الحقوق محفوظة.</p>
+    </footer>
+
+    <!-- نافذة المعاينة المنبثقة (Modal) -->
+    <div id="wallpaper-modal" class="modal">
+        <span class="close-modal-btn">&times;</span>
+        <div class="modal-content">
+            <!-- إطارات الأجهزة للمحاكاة -->
+            <div class="device-mockup" id="desktop-mockup">
+                <div class="laptop-frame">
+                    <div class="laptop-screen" id="laptop-screen-img"></div>
+                </div>
+            </div>
+            <div class="device-mockup" id="mobile-mockup">
+                <div class="phone-frame">
+                    <div class="phone-screen" id="phone-screen-img"></div>
+                </div>
+            </div>
+
+            <div class="modal-info">
+                <h3 id="modal-title"></h3>
+                <p>أو اختر جودة مختلفة للتحميل:</p>
+                <div class="download-buttons" id="download-links"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- مكتبة الخلفية المتحركة -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
